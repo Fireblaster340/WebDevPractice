@@ -21,8 +21,8 @@ function IncrementCookie(){
 if (document.cookie.includes("clicks=")==false){
     document.cookie = "clicks=0; expires="+b.toUTCString()+"; path=/";
 }
-let clicks = Number(document.cookie.at(document.cookie.match(/\d+/)))
-console.log(document.cookie.at(document.cookie.match(/\d+/)))
+let clicks = Number(ocument.cookie.match(/\d+/))
+console.log(document.cookie.match(/\d+/))
 let newText= "<b>Well... </b>"
 
 
