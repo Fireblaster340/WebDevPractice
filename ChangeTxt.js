@@ -6,17 +6,22 @@ function Change() {
     newText = "<u>Updated Wow!</u>"
 
 }
+
+    //prompt("Hi, enter absolutely anything, I really don't care")
+
 let k = false;
 let b = new Date();
 b.setTime(b.getTime()+(30*24*60*60*1000))
 function IncrementCookie(){
     document.cookie = "clicks="+(document.cookie+1)
 
-
+}
 if (document.cookie.includes("clicks=")==false){
     document.cookie = "clicks=0; expires="+b.toUTCString()+"; path=/";
 }
 let newText= "<b>Well... </b>"
+
+
 function SwitchVar(){
     IncrementCookie()
     alert(document.cookie)
@@ -30,6 +35,4 @@ function SwitchVar(){
     } else {
         document.getElementById("buttonsubmit").innerHTML = "<em>Whooa</em>"
         k=true
-    }
-    //prompt("Hi, enter absolutely anything, I really don't care")
-}
+}}
