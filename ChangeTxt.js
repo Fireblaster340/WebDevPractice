@@ -2,7 +2,7 @@ let i;
 function Change() {
     let j = 3, a = 4;
     document.getElementById("maintext").innerHTML = "Whoa!"+j
-    document.getElementById("buttontext").innerHTML = "You pressed me!"+a
+    document.getElementById("buttontext").innerHTML = "You pressed me!"
     document.getElementById("top").innerHTML = "Click the button at the botom to change the ttext below!"
     newText = "<u>Updated Wow!</u>"
 
