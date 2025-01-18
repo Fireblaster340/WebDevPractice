@@ -9,7 +9,7 @@ function Change() {
 }
 let k = false;
 let b = new Date();
-b.setTime(30*24*60*60*1000)
+b.setTime(b.getTime()+(30*24*60*60*1000))
 document.cookie = "clicks=99; expires="+b.toUTCString()+"; path=/";
 alert(document.cookie)
 let newText= "<b>Well... </b>"
