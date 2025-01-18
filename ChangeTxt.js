@@ -22,6 +22,7 @@ if (document.cookie.includes("clicks=")==false){
     document.cookie = "clicks=0; expires="+b.toUTCString()+"; path=/";
 }
 let clicks = Number(document.cookie.at(document.cookie.search("clicks=")+1))
+console.log(document.cookie.at(document.cookie.search("clicks=")))
 let newText= "<b>Well... </b>"
 
 
