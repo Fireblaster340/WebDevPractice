@@ -9,8 +9,9 @@ function Change() {
 }
 let k = false;
 let b = new Date();
-b.setTime(3000000000)
-document.cookie = "clicks=99; expires="+b.toUTCString()
+b.setTime(30*24*60*60*1000)
+document.cookie = "clicks=99; expires="+b.toUTCString()+"; path=/";
+alert(document.cookie)
 let newText= "<b>Well... </b>"
 function SwitchVar(){
     alert(document.cookie)
