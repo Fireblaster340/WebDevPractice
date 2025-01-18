@@ -13,6 +13,7 @@ b.setTime(3000000000)
 document.cookie = "clicks=99; expires="+b.toUTCString()
 let newText= "<b>Well... </b>"
 function SwitchVar(){
+    alert(document.cookie)
     /*if (confirm("Are you sure?") == false) {
         return 0;
     }
