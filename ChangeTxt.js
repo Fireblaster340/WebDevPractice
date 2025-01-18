@@ -13,12 +13,14 @@ let k = false;
 let b = new Date();
 b.setTime(b.getTime()+(30*24*60*60*1000))
 function IncrementCookie(){
-    document.cookie = "clicks="+(document.cookie+1)
+    document.cookie = document.cookie = "clicks="+(clicks+1)+"; expires="+b.toUTCString()+"; path=/";
+    clicks=clicks+1
 
 }
 if (document.cookie.includes("clicks=")==false){
     document.cookie = "clicks=0; expires="+b.toUTCString()+"; path=/";
 }
+let clicks = document.cookie.at(document.cookie.search("clicks=")+1)
 let newText= "<b>Well... </b>"
 
 
