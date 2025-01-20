@@ -14,7 +14,7 @@ let k = false;
 let b = new Date();
 b.setTime(b.getTime()+(30*24*60*60*1000))
 function IncrementCookie(){
-    document.cookie = document.cookie = "clicks="+(clicks+1)+"; expires="+b.toUTCString()+"; path=/";
+    document.cookie = document.cookie = "clicks="+(clicks+clickSpeed)+"; expires="+b.toUTCString()+"; path=/";
     clicks= Number(clicks)+clickSpeed
    
 
