@@ -27,6 +27,7 @@ let newText= "<b>Well... </b>"
 
 function Reset(){
     document.cookie = "clicks=0; expires="+b.toUTCString()+"; path=/"
+    clicks=0
     alert(document.cookie)
 }
 function SwitchVar(){
