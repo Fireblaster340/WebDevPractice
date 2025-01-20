@@ -25,7 +25,9 @@ let clicks = Number(document.cookie.match(/\d+/))
 console.log(document.cookie.match(/\d+/))
 let newText= "<b>Well... </b>"
 
-
+function Reset(){
+    document.cookie = "clicks=0; expires="+b.toUTCString()+"; path=/"
+}
 function SwitchVar(){
     IncrementCookie()
     alert(document.cookie)
