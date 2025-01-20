@@ -1,5 +1,6 @@
 
 function Change() {
+    ClickSpeed = 2
     document.getElementById("maintext").innerHTML = "Whoa!"
     document.getElementById("buttontext").innerHTML = "You pressed me!"
     document.getElementById("top").innerHTML = "Click the button at the botom to change the ttext below!"
@@ -24,15 +25,18 @@ if (document.cookie.includes("clicks=")==false){
 let clicks = Number(document.cookie.match(/\d+/))
 console.log(document.cookie.match(/\d+/))
 let newText= "<b>Well... </b>"
+let clickSpeed = 1
 
 function Reset(){
     document.cookie = "clicks=0; expires="+b.toUTCString()+"; path=/"
     clicks=0
+}
+function ShowCookie(){
     alert(document.cookie)
 }
+
 function SwitchVar(){
     IncrementCookie()
-    alert(document.cookie)
     /*if (confirm("Are you sure?") == false) {
         return 0;
     }
