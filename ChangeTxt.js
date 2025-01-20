@@ -14,8 +14,8 @@ let k = false;
 let b = new Date();
 b.setTime(b.getTime()+(30*24*60*60*1000))
 function IncrementCookie(){
-    document.cookie = document.cookie = "clicks="+(clicks+clickSpeed)+"; expires="+b.toUTCString()+"; path=/";
-    clicks= Number(clicks)+clickSpeed
+    document.cookie = document.cookie = "clicks="+(clicks+ClickSpeed)+"; expires="+b.toUTCString()+"; path=/";
+    clicks= Number(clicks)+ClickSpeed
    
 
 }
@@ -25,7 +25,7 @@ if (document.cookie.includes("clicks=")==false){
 let clicks = Number(document.cookie.match(/\d+/))
 console.log(document.cookie.match(/\d+/))
 let newText= "<b>Well... </b>"
-let clickSpeed = 1
+let ClickSpeed = 1
 
 function Reset(){
     document.cookie = "clicks=0; expires="+b.toUTCString()+"; path=/"
