@@ -34,9 +34,12 @@ function Reset(){
 function ShowCookie(){
     alert(document.cookie)
 }
-
+function AddCookie(){
+    document.cookie = "seen=True; expires="+b.toUTCString()+"; path=/"
+}
 function SwitchVar(){
     IncrementCookie()
+    alert(document.cookie)
     /*if (confirm("Are you sure?") == false) {
         return 0;
     }
