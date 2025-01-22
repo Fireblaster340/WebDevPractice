@@ -37,6 +37,9 @@ function ShowCookie(){
 function AddCookie(){
     document.cookie = "seen=True; expires="+b.toUTCString()+"; path=/"
 }
+function DeleteCookie(){
+    document.cookie = "seen=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/"
+}
 function SwitchVar(){
     IncrementCookie()
     alert(document.cookie)
